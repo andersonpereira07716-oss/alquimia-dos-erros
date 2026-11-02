@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Alquimia dos Erros</title>
+  <script type="module" crossorigin src="/assets/index-ClBqmn55.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BesLhYKI.css">
+</head>
+<body>
+  <div id="game-container">
+    <!-- Menu Principal -->
+    <div id="main-menu" class="screen">
+      <h1>ALQUIMIA DOS ERROS</h1>
+      <p>DEBUGGING LEGEND</p>
+      <div id="high-score-menu" class="highscore-text">RECORDE: 0</div>
+      <button id="start-btn" class="neon-btn">INICIAR DEPURAÇÃO</button>
+    </div>
+
+    <!-- HUD de Jogo -->
+    <div id="game-ui" class="hidden">
+      <div id="ui-layer">
+        <div class="stat-box"><span class="label">NÍVEL:</span> <span id="level">1</span></div>
+        <div class="stat-box"><span class="label">XP:</span> <span id="xp">0</span></div>
+        <div class="stat-box"><span class="label">BUGS:</span> <span id="score">0</span></div>
+      </div>
+      
+      <div id="health-bar-container">
+        <div id="health-bar"></div>
+      </div>
+
+      <!-- Boss Bar -->
+      <div id="boss-bar-container" class="hidden">
+        <div id="boss-name">CHEFE DE NÚCLEO</div>
+        <div id="boss-bar"></div>
+      </div>
+    </div>
+
+    <!-- Modal de Upgrade -->
+    <div id="upgrade-modal" class="hidden">
+      <h2>SISTEMA ATUALIZADO</h2>
+      <p>Selecione uma otimização de código:</p>
+      <div id="upgrade-options"></div>
+    </div>
+
+    <!-- Ecrã de Game Over -->
+    <div id="gameover-screen" class="hidden screen">
+      <h2>CRASH DE SISTEMA</h2>
+      <p>O depurador falhou e o núcleo colapsou.</p>
+      <div class="final-stats">Bugs eliminados: <span id="final-score">0</span></div>
+      <div id="record-msg" class="highscore-text">NOVO RECORDE GLOBAL!</div>
+      <button id="restart-btn" class="neon-btn">REINICIAR SISTEMA</button>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+  </div>
+</body>
+</html>

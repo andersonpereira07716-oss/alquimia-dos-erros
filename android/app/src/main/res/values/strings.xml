@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Alquimia dos Erros</string>
+    <string name="title_activity_main">Alquimia dos Erros</string>
+    <string name="package_name">com.silvaapps.alquimiadoserros</string>
+    <string name="custom_url_scheme">com.silvaapps.alquimiadoserros</string>
+</resources>
